@@ -1,0 +1,8 @@
+Revision history for Perl extension Text::WrapI18N.
+
+0.02  Fri Jun 20 22:59:20 2003
+	- Added EXPORT_TAGS.
+
+0.01  Thu Jun 19 22:03:11 2003
+	- initial version.
+
