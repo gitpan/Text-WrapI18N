@@ -9,7 +9,7 @@ our @EXPORT = qw(wrap);
 our @EXPORT_OK = qw($columns $separator);
 our %EXPORT_TAGS = ('all' => [ @EXPORT, @EXPORT_OK ]);
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 use vars qw($columns $break $tabstop $separator $huge $unexpand $charmap);
 use Text::CharWidth qw(mbswidth mblen);
@@ -47,6 +47,7 @@ sub wrap {
 	my $wlen = 0;
 	my $cont_lf = 0;
 	my ($c, $w, $b);
+	$text =~ s/\n+$/\n/;
 	while(1) {
 		if (length($text) == 0) {
 			return $out . $word;
@@ -54,6 +55,7 @@ sub wrap {
 		($c, $text, $w, $b) = _extract($text);
 		if ($c eq "\n") {
 			$out .= $word . $separator;
+			if (length($text) == 0) {return $out;}
 			$len = 0;
 			$text = $top2 . $text;
 			$word = '' ; $wlen = 0;
