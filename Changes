@@ -1,5 +1,8 @@
 Revision history for Perl extension Text::WrapI18N.
 
+0.05  Sun Jun 22 17:32 30 2003
+	- Added PREREQ_PM for Makefile.PL .
+
 0.04  Sun Jun 22 11:54:32 2003
 	- A bugfix when given string is ended by \n.
 
