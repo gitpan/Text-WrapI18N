@@ -1,4 +1,4 @@
-Text::WrapI18N version 0.05
+Text::WrapI18N version 0.06
 ===========================
 
 This is a module which intends to substitute Text::Wrap,
@@ -47,5 +47,11 @@ COPYRIGHT AND LICENCE
 Copyright (C) 2003 Tomohiro KUBOTA <kubota@debian.org>
 
 This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself. 
+it under the terms of either:
+
+    a) the GNU General Public License as published by the Free Software
+       Foundation; either version 1, or (at your option) any later
+       version, or
+
+    b) the "Artistic License" which comes with Perl.
 

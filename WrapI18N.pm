@@ -9,7 +9,7 @@ our @EXPORT = qw(wrap);
 our @EXPORT_OK = qw($columns $separator);
 our %EXPORT_TAGS = ('all' => [ @EXPORT, @EXPORT_OK ]);
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 use vars qw($columns $break $tabstop $separator $huge $unexpand $charmap);
 use Text::CharWidth qw(mbswidth mblen);
