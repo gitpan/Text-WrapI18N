@@ -3,3 +3,4 @@ Makefile.PL
 MANIFEST
 README
 WrapI18N.pm
+t/use.t
